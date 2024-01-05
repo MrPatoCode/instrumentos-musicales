@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.paulinoeme.proyecto.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_instrumentsFragment"
+            app:destination="@id/instrumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instrumentsFragment"
+        android:name="com.paulinoeme.proyecto.fragments.InstrumentsFragment"
+        android:label="fragment_instruments"
+        tools:layout="@layout/fragment_instruments" >
+        <action
+            android:id="@+id/action_instrumentsFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_instrumentsFragment_to_randomFragment"
+            app:destination="@id/randomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.paulinoeme.proyecto.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="com.paulinoeme.proyecto.fragments.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" />
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MenuFragment"
+    android:background="@color/whiteC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instrumentos \n Musicales"
+            android:textSize="34sp"
+            android:textColor="@color/purpleC"
+            android:textAlignment="center"
+            android:layout_marginTop="0sp"/>
+
+        <ImageView
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4sp"
+            android:src="@mipmap/music"/>
+
+        <Button
+            android:id="@+id/btn_entr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:backgroundTint="@color/redC"
+            android:textColor="@color/whiteC"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="4sp"/>
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="@color/whiteC"
+            android:backgroundTint="@color/blueSC"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="4sp"/>
+    </LinearLayout>
+
+</LinearLayout>

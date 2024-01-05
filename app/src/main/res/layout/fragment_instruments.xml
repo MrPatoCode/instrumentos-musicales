@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InstrumentsFragment"
+    android:background="@color/whiteC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_instruments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instrumentos"
+            android:textSize="38dp"
+            android:textAlignment="center"
+            android:textColor="@color/purpleC"
+            android:layout_marginTop="8sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            android:stretchColumns="*">
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_guitarra"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/guitarra"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_acordeon"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/acordeon"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_violin"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/otorgar"/>
+
+            </TableRow>
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_piano"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/teclado"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_xilofono"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/xilofono"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_trompeta"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/trompeta"/>
+
+            </TableRow>
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_arpa"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/arpa"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_maracas"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/maracas"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_panderete"
+                    android:layout_width="128sp"
+                    android:layout_height="128sp"
+                    android:background="@mipmap/pandereta"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14sp"
+            android:backgroundTint="@color/blueSC"
+            android:text="Jugar"
+            android:textSize="24dp"
+            android:textColor="@color/whiteC"/>
+
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14sp"
+            android:backgroundTint="@color/redC"
+            android:text="Aleatorio"
+            android:textSize="24dp"
+            android:textColor="@color/whiteC"/>
+
+    </LinearLayout>
+
+</LinearLayout>

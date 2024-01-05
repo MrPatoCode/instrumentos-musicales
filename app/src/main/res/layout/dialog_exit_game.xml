@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background = "@color/whiteC">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android.layout_constraintBotton_toBottonOf="parent"
+        android.layout_constraintEnd_toEndOf="parent"
+        android.layout_constraintStart_toStartOf="parent"
+        android.layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fin del Juego"
+            android:textAlignment="center"
+            android:textColor="@color/purpleC"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TVnamedialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:text="Puntuación:"
+            android:textAlignment="center"
+            android:textColor="@color/purpleC"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TVnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/purpleC"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:backgroundTint="@color/redC"
+            android:text="Menu" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GameFragment"
+    android:background="@color/whiteC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvInstrument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/purpleC"
+            android:text="Instrumento"
+            android:textSize="36dp"/>
+
+        <ImageView
+            android:id="@+id/ivInstrument"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8sp">
+
+            <android.widget.Button
+                android:id="@+id/btn_No"
+                android:layout_width="128sp"
+                android:layout_height="128sp"
+                android:background ="@drawable/baseline_close_24" />
+
+            <android.widget.Button
+                android:id="@+id/btn_Yes"
+                android:layout_width="128sp"
+                android:layout_height="128sp"
+                android:background ="@drawable/baseline_done_24"/>
+
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_arrow"
+            android:layout_width="128sp"
+            android:layout_height="128sp"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_forward_24"
+            android:layout_marginTop="8sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
