@@ -1,4 +1,4 @@
-App móvil sobre instrumentos musicales con imágenes y sonidos dirigida a niños (Proyecto escolar) 
+App Android sobre instrumentos musicales con imágenes y sonidos dirigida a niños (Proyecto escolar) 
 
 ![menu](https://github.com/MrPatoCode/instrumentos-musicales/assets/147260416/5ff1cd9c-f9d3-40d3-bc16-2b14b798b945)
 
